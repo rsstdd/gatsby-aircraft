@@ -1,0 +1,62 @@
+{
+  "private": true,
+  "name": "gatsby-aircraft",
+  "description": "WWII Era Aircraft Built with Gatsby",
+  "author": "Ross Todd",
+  "main": "n/a",
+  "scripts": {
+    "clean": "rm -rf public",
+    "build": "gatsby build --prefix-paths",
+    "deploy": "gh-pages -d public",
+    "develop": "gatsby develop",
+    "lint": "eslint .",
+    "start": "gatsby develop",
+    "test:lint": "npm run lint",
+    "test": "npm-run-all -p test:* -cn",
+    "release": "run-s clean build deploy"
+  },
+  "keywords": [
+    "Aircraft",
+    "javascript",
+    "gatsby",
+    "react"
+  ],
+  "homepage": "https://github.com/rsstdd/gatsby-aircraft#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsstdd/gatsby-aircraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rsstdd/gatsby-aircraft/issues"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "gatsby": "^1.9.45",
+    "gatsby-link": "^1.6.17",
+    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-source-filesystem": "^1.5.1",
+    "gatsby-transformer-json": "^1.0.14",
+    "gatsby-transformer-remark": "^1.7.15",
+    "typography-theme-github": "^0.15.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "gatsby-cli": "^1.1.7",
+    "gh-pages": "^1.0.0",
+    "lint-staged": "^4.2.3",
+    "npm-run-all": "^4.1.1",
+    "prettier": "^1.7.3"
+  }
+}
