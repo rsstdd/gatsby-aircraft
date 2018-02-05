@@ -1,6 +1,6 @@
 # Gatsby Aircraft
 
-###  I'm learning [Gatsby.js](https://www.gatsbyjs.org/) and hat todo apps.
+###  I'm learning [Gatsby.js](https://www.gatsbyjs.org/) and hate todo apps.
 
 > Airplanes are much nicer, don't you think?
 
