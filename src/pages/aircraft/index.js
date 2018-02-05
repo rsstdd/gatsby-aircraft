@@ -5,11 +5,14 @@ import Link from 'gatsby-link';
 const IndexAircraft = ({ data }) => (
   <div>
     <h1>WWII Era Military Aircraft</h1>
+
     <blockquote>
+      Flying a good airplane doesn't require near as much attention as a motor car.
+      <br />
+      -- Charles Lindbergh
     </blockquote>
 
-    {data.allAircraftJson.edges.map(node => console.log(node.node.description))}
-
+    {data.allAircraftJson.edges.map(node => console.log(node))}
     {data.allAircraftJson.edges.map((node, key) => (
       <Link
         key={key}
@@ -23,7 +26,7 @@ const IndexAircraft = ({ data }) => (
         }}
       >
         <div>
-          <b>{node.node.name}</b>, - {node.node.countryOfOrigin}
+          <b>{node.node.name}</b> -- {node.node.countryOfOrigin}
           <p>
             {node.node.description
               .split(' ')
@@ -54,7 +57,14 @@ export const query = graphql`
           }
           name
           description
+          yearInService
           countryOfOrigin
+          operators
+          maxSpeed
+          maxRange
+          ceiling
+          engines
+          imgUrl
         }
       }
     }
