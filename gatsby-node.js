@@ -5,7 +5,6 @@ exports.onCreateNode = ({ node, _, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
   if (node.internal.type === `AircraftJson`) {
     const slug = slugify(node.name);
-    console.log(slug);
     createNodeField({
       node,
       name: `slug`,

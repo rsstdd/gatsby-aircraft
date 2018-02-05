@@ -12,7 +12,6 @@ const IndexAircraft = ({ data }) => (
       -- Charles Lindbergh
     </blockquote>
 
-    {data.allAircraftJson.edges.map(node => console.log(node))}
     {data.allAircraftJson.edges.map((node, key) => (
       <Link
         key={key}
