@@ -36,7 +36,7 @@
     ]
   },
   "dependencies": {
-    "gatsby": "^1.9.45",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.17",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
