@@ -42,7 +42,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-source-filesystem": "^1.5.1",
     "gatsby-transformer-json": "^1.0.14",
-    "gatsby-transformer-remark": "^1.7.15",
+    "gatsby-transformer-remark": "^5.25.1",
     "typography-theme-github": "^0.15.10"
   },
   "devDependencies": {
